@@ -1,0 +1,121 @@
+/* Open Source for Beginners — static site styles */
+:root {
+  --bg: #ffffff;
+  --surface: #fafafa;
+  --ink: #1f2937;
+  --muted: #4b5563;
+  --line: #e5e7eb;
+  --accent: #0f6f7c;
+  --accent-hover: #0b5a65;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+  padding: 40px 0 24px;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+main h3 { font-size: 17px; margin-top: 28px; }
+
+p { margin: 12px 0; }
+
+ul, ol { margin: 10px 0 20px; padding-left: 24px; }
+
+li { margin: 6px 0; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--ink);
+}
+
+pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 16px;
+  overflow-x: auto;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.print-hint {
+  display: none;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Print styles */
+@media print {
+  body { background: #fff; color: #000; }
+  header { border-bottom: 1px solid #000; padding-bottom: 12px; margin-bottom: 20px; }
+  nav, .print-hint { display: none !important; }
+  a { color: #000; text-decoration: none; }
+  h2 { border-bottom: 1px solid #000; page-break-after: avoid; }
+  code { background: #f5f5f5; border: 1px solid #ddd; }
+  pre { background: #f5f5f5; border: 1px solid #ddd; }
+  footer { border-top: 1px solid #000; }
+}

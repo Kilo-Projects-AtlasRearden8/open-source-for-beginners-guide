@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Source for Beginners — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Open Source for Beginners</h1>
+<p>A plain-English guide to finding, installing, and contributing to open-source software on GitHub.</p>
+<nav>
+<a href="#intro">Introduction</a>
+<a href="#finding-projects">Finding Projects</a>
+<a href="#installing">Installing Software</a>
+<a href="#reporting-issues">Reporting Issues</a>
+<a href="#first-pull-request">First Pull Request</a>
+<a href="checklist.html">Printable Checklist</a>
+</nav>
+</header>
+
+<main>
+<section id="intro">
+<h2>Introduction</h2>
+<p>Open-source software is software anyone can use, study, change, and share. When
+you use open source, you join a community of people building tools together —
+and you are welcome to join, too.</p>
+<p>You do not need to be a programmer. You do not need to know the command line.
+If you can use a web browser, you can follow this guide.</p>
+</section>
+
+<section id="finding-projects">
+<h2>Finding Open-Source Projects</h2>
+<p>The best place to start is <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>,
+a free website where people host code, track issues, and work together.</p>
+<h3>1. Make a GitHub account</h3>
+<ol>
+<li>Go to github.com and click <strong>Sign up</strong>.</li>
+<li>Follow the prompts to create your account.</li>
+<li>Verify your email address.</li>
+</ol>
+<p>You need an account to comment on issues or send pull requests. You do not
+need an account just to browse or download.</p>
+<h3>2. Search for projects</h3>
+<p>Use the search bar at the top of GitHub. Try searches like
+<code>"beginner friendly"</code>, <code>"good first issue"</code>, or a topic you
+care about, like <code>budget</code>, <code>chess</code>, or <code>AI</code>.</p>
+<h3>3. Look for beginner-friendly signs</h3>
+<ul>
+<li>A <code>README.md</code> file explaining what the project does</li>
+<li>A <code>CONTRIBUTING.md</code> file explaining how to contribute</li>
+<li>Labels like <code>good first issue</code> or <code>beginner-friendly</code></li>
+<li>Recent activity in the last few months</li>
+<li>Clear install and run instructions</li>
+</ul>
+<h3>4. Read the README first</h3>
+<p>The README tells you what the project does, how to install it, how to run it,
+and how to contribute. Read it before doing anything else.</p>
+</section>
+
+<section id="installing">
+<h2>Installing Open-Source Software</h2>
+<h3>Option A: Download a release (easiest)</h3>
+<ol>
+<li>Go to the project's GitHub page.</li>
+<li>Look for the <strong>Releases</strong> section or click <strong>Releases</strong> in the top menu.</li>
+<li>Find the latest release.</li>
+<li>Download the file for your computer:</li>
+</ul>
+<ul>
+<li>Windows: <code>.exe</code> or <code>.msi</code></li>
+<li>Mac: <code>.dmg</code> or <code>.pkg</code></li>
+<li>Linux: <code>.AppImage</code>, <code>.deb</code>, or source tarball</li>
+</ul>
+<li>Open the file and follow the installer.</li>
+</ol>
+<h3>Option B: Install from source code</h3>
+<p>Follow the project's README step by step. Common commands you might see:</p>
+<pre><code>git clone https://github.com/owner/repo.git
+cd repo
+npm install          # or: pip install -r requirements.txt
+npm start            # or: python main.py</code></pre>
+<p>If you get stuck, search the project's <strong>Issues</strong> tab for your error
+message, or open a new issue.</p>
+</section>
+
+<section id="reporting-issues">
+<h2>Reporting Issues</h2>
+<p>An "issue" is a report of a problem, a question, or a feature request. Reporting
+issues is one of the most helpful things a beginner can do — no coding required.</p>
+<h3>Before you open an issue</h3>
+<ul>
+<li>Search the project's <strong>Issues</strong> tab for the same problem.</li>
+<li>If you find a match, comment that you have the same problem instead of opening a new one.</li>
+<li>Gather details: what you did, what happened, what you expected, and your operating system.</li>
+</ul>
+<h3>How to open an issue on GitHub</h3>
+<ol>
+<li>Go to the project's GitHub page.</li>
+<li>Click the <strong>Issues</strong> tab.</li>
+<li>Click <strong>New issue</strong>.</li>
+<li>Give it a clear title.</li>
+<li>Describe what you did, what happened, what you expected, your operating system,
+and any error messages.</li>
+<li>Click <strong>Submit new issue</strong>.</li>
+</ol>
+</section>
+
+<section id="first-pull-request">
+<h2>Making Your First Pull Request</h2>
+<p>A "pull request" (PR) is how you suggest changes to a project. This walkthrough
+uses GitHub's website — no command line required.</p>
+<h3>1. Fork the project</h3>
+<p>Go to the project's GitHub page, click <strong>Fork</strong> in the top right,
+and choose your account. GitHub copies the project to your account.</p>
+<h3>2. Find something to fix</h3>
+<p>Good first contributions: fixing a typo in the README, adding a missing
+installation step, or translating a document. Look for issues labeled
+<code>good first issue</code> or <code>beginner-friendly</code>.</p>
+<h3>3. Edit a file on GitHub</h3>
+<ol>
+<li>In your fork, find the file you want to change.</li>
+<li>Click the pencil icon (Edit this file).</li>
+<li>Make your change.</li>
+<li>Choose <strong>Create a new branch</strong> and give it a name, like
+<code>fix-readme-typo</code>.</li>
+<li>Click <strong>Commit changes</strong>.</li>
+</ol>
+<h3>4. Open a pull request</h3>
+<ol>
+<li>Click <strong>Compare &amp; pull request</strong> (or go to your fork &rarr;
+<strong>Contribute</strong> &rarr; <strong>Open pull request</strong>).</li>
+<li>Give the PR a clear title and describe what you changed.</li>
+<li>Click <strong>Create pull request</strong>.</li>
+</ol>
+<h3>5. Wait for review</h3>
+<p>A maintainer may comment or request changes. Reply politely. If they merge your
+PR, congratulations — you are an open-source contributor!</p>
+</section>
+</main>
+
+<footer>
+<p><strong>Created by Asdale Dynamics, LLC</strong> (Indiana, formed October 2026) —
+beginner-friendly AI education, books and guides, and practical tools.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC. Licensed under the MIT License.</p>
+</footer>
+</div>
+</body>
+</html>
